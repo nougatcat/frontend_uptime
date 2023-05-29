@@ -1,0 +1,48 @@
+header {
+    height: 112px;
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.navigation {
+    min-height: 112px;
+    display: flex;
+    align-items: center; /*по вертикали */
+    justify-content: space-between;
+    column-gap: 139px;
+		&__logo {
+            width:280px;
+            height:75px;
+            display: block;
+            background:url(../images/head-logo.png);
+            &:hover {
+                cursor: pointer;
+                background:url(../images/pointer_logo.png);
+            }
+		}
+
+		&__menu {
+            display:flex;
+            //column-gap:85px;
+            // flex-grow:1;
+		}
+
+		&__element {
+            width: 190px;
+            line-height: 112px;
+            padding-left: 23px;
+            color: $light_green;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:visited {
+                color: $light_green;
+            }
+            &:hover {
+                color: $neon_pink;
+                // cursor: pointer;
+            }
+		}
+        &__element__picked {
+            color: $neon_pink !important;
+        }
+}

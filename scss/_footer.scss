@@ -1,0 +1,78 @@
+.footer {
+    width: 1296px;
+    margin: 0 auto;
+    height: 328px;
+    padding-bottom: 66px;
+    padding-top: 64px;
+    display: grid;
+    grid-template-areas: 
+        "address image faq"
+        "address image faq"
+        "time . social"
+        ". copyright .";
+
+    &__address {
+        
+        color: $light_green;
+        grid-area: address;
+        div {
+            margin-bottom: 15px;
+            display:flex;
+            align-items: center;
+            column-gap: 14px;
+        }
+    }
+
+    &__logo {
+        grid-area: image;
+        margin-bottom: 36px;
+        margin: 0 auto;
+    }
+
+    &__faq {
+        grid-area: faq;
+        
+        a {
+            text-decoration: none;
+            display:block;
+            margin-bottom: 15px;
+            color: $light_green;
+        }
+        a:visited {
+            color: $light_green;
+        }
+        a:hover {
+            color: $neon_pink;
+        }
+    }
+
+    &__time {
+        grid-area: time;
+        color: $light_green;
+        display:flex;
+        align-items: center;
+        column-gap: 14px;
+    }
+
+    &__social {
+        
+        grid-area: social;
+        &-link {
+            padding-right: 16px;
+            &:hover {
+                color: $neon_pink;
+                filter:invert(1);
+            }
+        }
+    }
+
+    &_copyright {
+
+        margin: 0 auto;
+        color: $light_green;
+        grid-area: copyright;
+        display:flex;
+        align-items: center;
+        column-gap: 14px;
+    }
+}

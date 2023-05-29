@@ -1,0 +1,44 @@
+.cards {
+    // border: 1px solid green;
+    margin-bottom: 42px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas:
+                    ". . ."
+                    ". . .";//ячейки автоматически расставляются
+		&__image {
+            width: 416px;
+            height: 416px;
+		}
+
+		&__advertisement {
+            width: 416px;
+            height: 208px;
+            border-radius: 0px 0px 24px 24px;
+            font-size: 36px;
+
+            position: relative;
+            &-text {
+                position: absolute;
+                width: 416px;
+                left: calc(50% - 416px/2);
+                top: 0%;
+                bottom: 0%;
+                line-height: 45px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+		}
+        &__advertisement__1 {
+            background-color: $neon_purple;
+		}
+        &__advertisement__2 {
+            background-color: $green;
+		}
+        &__advertisement__3 {
+            background-color: $neon_pink;
+		}
+}

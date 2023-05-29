@@ -1,0 +1,47 @@
+.bigNews { 
+    min-width: 1296px; 
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 18px;
+    background-color: $highlight_black;
+    margin-bottom: 42px;
+    &__image {
+        width:100%; 
+        height: 457px;
+        object-fit: cover; //чтобы сохранить высоту и не расстягивать изображение
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;                                                           
+        column-gap: 150px;
+        &-text {
+            //используется в js
+        }
+        &-textHidden {
+            display:none;
+        }
+        &-button {
+            &:hover {
+                cursor: pointer;
+                filter: hue-rotate(180deg);
+            }
+        }
+        &-buttonHidden {
+            visibility: hidden;
+        }
+    }
+    &__text {
+        font-size: 32px;
+        text-align: justify;
+        width: 1296px;
+        margin: 0 auto;
+        &-hidden {
+            display:none;
+        }
+
+        animation-name: appear;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+    }
+}

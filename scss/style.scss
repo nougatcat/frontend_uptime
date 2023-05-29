@@ -1,0 +1,82 @@
+@import url("../fonts/Gothic-A1.css");
+
+*, 
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$total_black: #0A0A0A;
+$highlight_black: #171717;
+$white: #EAEAEA;
+$neon_pink: #990069;
+$neon_purple: #6517A6;
+$light_green: #62B919;
+$green: #006620;
+$orange: #FF7C03;
+
+html,
+body {
+    font: 400 24px 'Gothic A1', sans-serif;
+    color: $white;
+    background-color: $total_black;
+}
+
+body {
+    ::-webkit-scrollbar {
+        width: 24px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: $green;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border: 4px solid $green;
+        background-color: $light_green;
+        border-radius: 30px;
+        // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+h1 {
+    color: $light_green;
+    font-weight: 300;
+    font-size: 56px;
+    text-align: center;
+}
+
+strong {
+    color: $orange;
+    font: 400 24px 'Gothic A1', sans-serif;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+//@import "./headerAlternative";
+
+@import "./header";
+
+@import "./cards";
+
+@import "./bignews";
+
+@import "./events";
+
+@import "./footer"
